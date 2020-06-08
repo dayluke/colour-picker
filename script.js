@@ -2,8 +2,8 @@ function generateColourScheme(chart, sliceIndex)
 {
   var rowCount = chart.getNumberOfRows();
   var colours = [
-    chart.getValue(sliceIndex, 0),
     chart.getValue( mod((sliceIndex - 1), rowCount) , 0),
+    chart.getValue(sliceIndex, 0),
     chart.getValue( mod((sliceIndex + 1), rowCount) , 0)
   ]
   

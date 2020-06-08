@@ -1,63 +1,81 @@
 body {
     font-size: 2em;
     font-family: Lato;
-  }
+}
   
-  #title {
+#title {
     font-size: 4em;
     font-weight: 700;
-  }
-  
-  #main-container {
+}
+
+#main-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  
-  #piechart {
+}
+
+#piechart {
     flex: 1;
-  }
-  
-  input[type=range] {
-    overflow: hidden;
-    display: block;
+}
+
+.slider {
     -webkit-appearance: none;
     width: 50%;
-    height: 10vh;
-    background: #222222;
-    border-radius: 10px;
-  }
-  
-  input[type=range]::webkit-slider-thumb {
+    height: 25px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    margin: 2vh 0;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
     -webkit-appearance: none;
-  }
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #4CAF50;
+    cursor: pointer;
+}
   
-  #bubble-container {
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #4CAF50;
+    cursor: pointer;
+}
+
+#bubble-container {
     padding: 20vh 0;
     flex: 2;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  .color-bubble {
+}
+
+.color-bubble {
     width: 200px;
     height: 200px;
     border-radius: 50%;
     background-color: #FF0000;
     box-shadow: 0px 0px 10vh -1.5vh rgba(0,0,0,0.75);
-  }
-  
-  .color-bubble + .color-bubble {
+}
+
+.color-bubble + .color-bubble {
     margin-left : 20px;
-  }
-  
-  .color-bubble p {
+}
+
+.color-bubble p {
     position: relative;
     top: 100%;
     text-align: center;
-  }
-  
-  #opacity-slider {
+}
+
+#opacity-slider {
     display: block;
-  }
+}

@@ -1,7 +1,11 @@
+![Title Image](hero-image.png)
+
 ## Description
 A simple and easy-to-use analogous colour scheme picker. Pick a colour, using the colour wheel and the
 three colour swatches at the bottom of the page will output three analogous colours. This could be very handy
 for designing websites or sleek UI.
+
+![Image of the outputed analogous colours](colour-blobs.png)
 
 ## Why?
 This was the first [Mintbean](mintbean.io) hackathon that I took part in. The time limit was 4 hours, and the
